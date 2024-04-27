@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaDevKing's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <script src="listen.js"></script>
+    <style>
+        body {
+            font-family: 'Pixelify Sans', sans-serif;
+            background-color: rgb(68, 2, 105);
+            padding: 50px;
+            animation: fadeIn 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            overflow-y: scroll;
+            color: black;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: x-large;
+            animation: slideInDown 1s ease-in-out;
+            margin-top: 24px;
+            color: black;
+            max-width: 80%;
+        }
+
+        h2 {
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 50px;
+            color: black;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+            border-radius: 20px;
+            object-fit: cover;
+            animation: zoomIn 1s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .languages-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .language-logo {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            margin: 20px;
+        }
+
+        .language-logo.visible {
+            opacity: 1;
+        }
+
+        .projects-container {
+            margin-top: 100px;
+        }
+
+        .projects-title {
+            font-size: 40px;
+            color: black;
+        }
+
+        .project-info {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .projects-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .projects-button:hover {
+            background-color: #45a049;
+        }
+
+        .projects-button + .projects-button {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>About me</h2>
+    <div>
+        <img src="Images/pfp.png" alt="Cartoon Image" class="profile-img">
+    </div>
+    <h1>Hello, I'm DaDevKing. Welcome to my corner of the internet where I will be sharing various projects and stuff I'm up to. I'm a programmer from the US, and I specialize in Java, Kotlin, Python, and Batch. I really enjoy making things easier by automating tasks and exploring new ways to tinker with things through code. I also create mods for Minecraft as well as ethical hacking and reverse engineering.</h1>
+
+    <div class="languages-container">
+        <img src="Images/javalogo.png" alt="Java Logo" class="language-logo">
+        <img src="Images/kotlinlogo.png" alt="Kotlin Logo" class="language-logo">
+        <img src="Images/pythonlogo.png" alt="Python Logo" class="language-logo">
+        <img src="Images/bashlogo.png" alt="Batch Logo" class="language-logo">
+    </div>
+
+    <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+
+    <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+        <a itemprop='url' href=https://www.fiverr.com/hc_107 rel="nofollow" target="_blank" style='display: inline-block;'>
+        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-eca30c7c-e9cf-4ec3-9264-521ffe90f666' itemprop='contentURL' style='display: none;'></div>
+        <div id='fiverr-widget-seller-data' style='display: none;'>
+            <div itemprop='name' >hc_107</div>
+            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+            <div itemprop='jobtitle'>Seller</div>
+            <div itemprop='description'>As a 15-year-old programmer with 5 years of experience, I specialize in Java, C++, JavaScript, Python, and Kotlin. Proficient in crafting web applications and developing Minecraft mods, I bring a unique blend of technical expertise and creative problem-solving. My commitment to excellence is evident in every project, where I meticulously strive to deliver optimal results. Beyond the lines of code, I embody a genuine passion for programming—a driving force that propels me to continually evolve and stay ahead in this dynamic field.</div>
+        </div>
+    </a>
+    </div>
+
+    <script id='fiverr-seller-widget-script-eca30c7c-e9cf-4ec3-9264-521ffe90f666' src='https://widgets.fiverr.com/api/v1/seller/hc_107?widget_id=eca30c7c-e9cf-4ec3-9264-521ffe90f666' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
+
+
+    <div class="projects-container">
+        <h2 class="projects-title">My Projects</h2>
+        <div class="project-info">
+            JSXED
+            <a href="path/to/download" class="projects-button">Download JSXED</a>
+            <a href="Docs/JSXED/index.html" class="projects-button">What is this tool?</a>
+        </div>
+        <div class="project-info">
+            Project 2
+            <a href="path/to/download" class="projects-button">Download</a>
+            <a href="" class="projects-button">Documentation</a>
+        </div>
+    </div>
+
+    <div class="project-info">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch with me, feel free to reach out via email at <a href="mailto:fallinganvil8@gmail.com">fallinganvil8@gmail.com</a>.</p>
+        <p>You can also connect with me on <a href="https://discord.com/users/945200155261542470">Discord</a></a>.</p>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', revealLanguages);
+
+        function revealLanguages() {
+            const languageLogos = document.querySelectorAll('.language-logo');
+
+            languageLogos.forEach(logo => {
+                const logoTop = logo.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (logoTop < windowHeight) {
+                    logo.classList.add('visible');
+                } else {
+                    logo.classList.remove('visible');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

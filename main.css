@@ -1,0 +1,24 @@
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: rgb(68, 2, 105);
+    padding: 50px;
+}
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+}
+.profile-img {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Set the height to match the width, making it a square */
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); /* Add thicker shadow effect */
+    border-radius: 20px; /* Make the image more like a round square */
+    object-fit: cover; /* Ensure the entire image fits within the square */
+}
+
+h2 {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: left;
+}
